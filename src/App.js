@@ -1,33 +1,35 @@
 import React, { Component } from 'react'
 import './App.css'
-import Question from './components/Question'
+import QuizList from './components/QuizList'
 import schoolData from './data/schoolData'
-//import questions from './data/questions'
-import SchoolList from './components/SchoolList'
+import questions from './data/questions'
+//import SchoolList from './components/SchoolList'
 
 let schools = schoolData
-console.log(schools)
+let questionList = questions
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      schools: []
+      schools: [],
+      questionList: [],
+      quizSelections: []
     }
   }
 
   componentDidMount() {
     this.setState ({
-      schools: schools
+      schools: schools,
+      questionList: questionList
     })
   }
 
   render () {
     return (
       <div className='App'>
-      <Question />
-      <SchoolList
-        schools={this.state.schools}
+      <QuizList
+        questionList={this.state.questionList}
       />
       </div>
     )

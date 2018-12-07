@@ -2,7 +2,9 @@ import React from 'react'
 import Question from './Question'
 
 const QuizList = props => {
-  return props.questions.map(question =>
+  console.log("Question props -->", props)
+
+  return props.questionList.map(question =>
       <Question
         key={question.id}
         question={question}
