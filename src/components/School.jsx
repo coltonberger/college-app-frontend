@@ -5,8 +5,10 @@ class School extends Component {
     console.log("school props", this.props)
     return (
       <div className='school'>
-      <h2>{this.props.school.schoolName}</h2>
-      <h2>{this.props.school.size}</h2>
+      <a href={this.props.school.link} target="_blank" className="ui medium image">
+        <img src="/images/wireframe/image-text.png" />
+      </a>
+      <h6>{this.props.school.schoolName}</h6>
       </div>
     )
   }
