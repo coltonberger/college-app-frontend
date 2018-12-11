@@ -22,7 +22,7 @@ class Question extends Component {
     return (
       <div className="question form">
         <label for="question">{this.props.question.question}</label>
-        <div className="ui radio checkbox">
+        <div className="ui radio">
           <label>
             {this.props.question.anwsers && this.props.question.anwsers.length ? this.props.question.anwsers
              .map( (answer,index) =>
