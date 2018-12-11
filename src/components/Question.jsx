@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import { Button } from 'semantic-ui-react'
+import '../App.css'
 
 class Question extends Component {
   constructor(props){
@@ -9,7 +9,7 @@ class Question extends Component {
     }
   }
   componentDidMount(){
-    console.log(this.props.question)
+    console.log("question props", this.props.question)
   }
   onCheck(id,type,checked){
     console.log(id,type)
@@ -20,20 +20,20 @@ class Question extends Component {
   }
   render () {
     return (
-      <div className="question form">
+      <div className="questionForm">
         <label for="question">{this.props.question.question}</label>
         <div className="ui radio">
           <label>
-            {this.props.question.anwsers && this.props.question.anwsers.length ? this.props.question.anwsers
-             .map( (answer,index) =>
+            {this.props.question.anwsers.map((answer,index, img) =>
              <div className="content">
+                <img src={this.props.question.img} alt="images"/>
                 <input type="checkbox" id={"answer"+index} name="answer"
                 onClick={()=> this.onCheck(this.props.question.id, answer.type)}
                 value={answer.type}
                 checked={this.state.answers[this.props.question.id + answer.type]}
                 />
                 <label for={"answer"+index}>{answer.content}</label>
-            </div>) : null}
+            </div>)}
           </label>
         </div>
       </div>
