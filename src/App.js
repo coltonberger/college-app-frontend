@@ -21,15 +21,17 @@ class App extends Component {
   componentDidMount() {
     this.setState ({
       schools: schools,
-      questionList: questionList
+      questionList: questionList,
+      step: 0
     })
   }
+
 
   render () {
     return (
       <div className='App'>
       <QuizList
-        questionList={this.state.questionList}
+        questionList={questionList}
       />
       </div>
     )

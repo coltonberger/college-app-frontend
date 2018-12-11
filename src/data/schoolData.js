@@ -11,19 +11,22 @@ let schoolData = [
     schoolName: 'American University',
     image: '',
     link: 'https://www.daytripperuniversity.com/dtuschool/american-university',
-    size: 'Medium'},
+    size: 'Medium'
+  },
   {
     id: 3,
     schoolName: 'Amherst College',
     image: '',
     link: 'https://www.daytripperuniversity.com/dtuschool/amherst-college',
-    size: 'Small'},
+    size: 'Small'
+  },
   {
     id: 4,
     schoolName: 'Arizona State University',
     image: '',
     link: 'https://www.daytripperuniversity.com/dtuschool/arizona-state-university',
-    size: 'Large'},
+    size: 'Large'
+  },
 ]
 
 export default schoolData;
