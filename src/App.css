@@ -1,8 +1,43 @@
 
 .content {
         display: inline-block;
-    }
+ }
+
+.question {
+  font-size: 20px;
+}
+
+.label {
+}
 
 .questionForm {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
 
+.content {
+  padding:1px;
+  border:1px solid #a3a0a0;
+  background-color:white;
+}
+
+input[type=checkbox] + label {
+  color: black;
+  font-style: italic;
+}
+input[type=checkbox]:checked + label {
+  color: #a80818;
+  font-style: normal;
+}
+
+.content:hover {
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid gray;
+  border-left: 3px solid gray;
+}
+
+.wrap{
+      text-align: center;
 }
