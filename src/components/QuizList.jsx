@@ -7,9 +7,9 @@ const QuizList = props => {
 
   return <div>
     <div>
-      <h2 class="ui icon center aligned header">
-        <img src= {require ("../data/images/daytripperLogo2.jpeg")} class="ui large centered image" alt="daytripper"/>
-        <div class="title">
+      <h2 className="ui icon center aligned header">
+        <img src= {require ("../data/images/daytripperLogo2.jpeg")} className="ui large centered image" alt="daytripper"/>
+        <div className="title">
           What college should you go to?
         </div>
       </h2>
@@ -26,7 +26,7 @@ const QuizList = props => {
     </div>
 
     <div className="ui container center aligned">
-      <button class="ui primary button">View Suggested Schools</button>
+      <button className="ui primary button" id="schoolButton">View Suggested Schools</button>
     </div>
   </div>
   }

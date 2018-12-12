@@ -24,18 +24,18 @@ class Question extends Component {
         <label className="question" for="question">{this.props.question.question}</label>
         <div className="ui radio">
           <label>
-            {this.props.question.anwsers.map((answer,index, img) =>
-             <div className="content">
-                <img src={this.props.question.id} alt="images" />
+            {this.props.question.anwsers.map(({id, type, content, img}) => {
+             return (<div className="content" key={id}>
+                <img src={img} alt="images" ></img>
                 <div className="wrap">
-                  <input type="checkbox" id={"answer"+index} name="answer"
-                  onClick={()=> this.onCheck(this.props.question.id, answer.type)}
-                  value={answer.type}
-                  checked={this.state.answers[this.props.question.id + answer.type]}
+                  <input type="checkbox" id={"answer"+id} name="answer"
+                  onClick={()=> this.onCheck(this.props.question.id, type)}
+                  value={type}
+                  checked={this.state.answers[this.props.question.id + type]}
                   />
-                  <label for={"answer"+index}>{answer.content}</label>
+                  <label for={"answer"+id}>{content}</label>
                 </div>
-            </div>)}
+            </div>)})}
           </label>
         </div>
       </div>

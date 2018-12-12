@@ -24,7 +24,7 @@
 
 input[type=checkbox] + label {
   color: black;
-  font-style: italic;
+  font-style: normal;
 }
 input[type=checkbox]:checked + label {
   color: #a80818;
@@ -40,4 +40,8 @@ input[type=checkbox]:checked + label {
 
 .wrap{
       text-align: center;
+}
+
+#schoolButton {
+  background-color: #a80818;
 }

@@ -6,19 +6,19 @@ var quizQuestions = [
         id: 1,
         type: "Small",
         content: "Small",
-        img:require("./images/smallUni.png")
+        img:"data/images/smallUni"
       },
       {
         id: 2,
         type: "Meduim",
         content: "Meduim",
-        img:require("./images/mediumUni.png")
+        img:"data/images/mediumUni"
       },
       {
         id: 3,
         type: "Large",
         content: "Large",
-        img:require("./images/largeUni.png")
+        img:"data/images/largeUni"
       }
     ]
   },
@@ -29,19 +29,19 @@ var quizQuestions = [
         id: 4,
         type: "Rural",
         content: "Rural",
-        img: require("./images/rural.png")
+        img: "data/images/rural"
       },
       {
         id: 5,
         type: "Suburban",
         content: "Suburban",
-        img:require("./images/suburban.png")
+        img:"data/images/suburban"
       },
       {
         id: 6,
         type: "Urban",
         content: "Urban",
-        img:require("./images/urban.png")
+        img:"data/images/urban"
       }
     ]
   },
@@ -52,19 +52,19 @@ var quizQuestions = [
         id: 7,
         type: "DI",
         content: "Sports are what I am going for",
-        img:require("./images/sports.png")
+        img:"data/images/sports"
       },
       {
         id: 8,
         type: "DII",
         content: "I enjoy watching games every now and then",
-        img:require("./images/placeholder.png")
+        img:"data/images/placeholder"
       },
       {
         id: 9,
         type: "DIII",
         content: "No interest",
-        img:require("./images/placeholder.png")
+        img:"data/images/placeholder"
       }
     ]
   },
@@ -75,19 +75,19 @@ var quizQuestions = [
         id: 10,
         type: "Big School",
         content: "Seeing whats on the quad",
-        img:require("./images/placeholder.png")
+        img:"data/images/placeholder"
       },
       {
         id: 11,
         type: "Medium School",
         content: "Studying to go out later",
-        img:require("./images/placeholder.png")
+        img:"data/images/placeholder"
       },
       {
         id: 12,
         type: "Small School",
         content: "Grabbing coffee in the student center to kill time",
-        img:require("./images/placeholder.png")
+        img:"data/images/placeholder"
       }
     ]
   },
@@ -98,19 +98,19 @@ var quizQuestions = [
         id: 13,
         type: "Big Classes",
         content: "Lecture style in a big auditorium",
-        img: require("./images/placeholder.png")
+        img: "data/images/placeholder"
       },
       {
         id: 14,
         type: "Small Classes",
         content: "Small allowing for class discussion",
-        img: require("./images/placeholder.png")
+        img: "data/images/placeholder"
       },
       {
         id: 15,
         type: "Medium Classes",
         content: "Challenging in and out of the class",
-        img: require("./images/placeholder.png")
+        img: "data/images/placeholder"
       }
     ]
   }
